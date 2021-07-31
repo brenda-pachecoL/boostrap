@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+   
+    <div align="center">
+        <h1>Registrate</h1>
+        <br>
+        <form>
+            <label for="correo">Correo Electronico</label>
+            <input type="text" id="correo"/>
+            <br>
+            <br>
+            <input type="button" class="btn btn-success" value="validar correo" onclick="validarCorreo()"/>
+        </form>
+    </div>
+    <a href="/intro/index.html">Atras</a>
+
+    <script>
+        function validarCorreo(correo){
+           var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+          var esValido= expReg.test(correo);
+          if(esValido==true){
+              alert("El corre electronico es valido");
+          }
+          else{
+              alert("El correo elctronico no es valido jajaj");
+          }
+       }
+    </script>
+    <script src="/intro/js/jquery.js"></script>
+    <script src="/intro/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>}}̣

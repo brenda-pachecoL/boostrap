@@ -1,0 +1,17 @@
+header{
+    background-color: blue;
+    color: white;
+}
+a{
+    color: white;
+}
+article{
+    background-color: bisque
+}
+aside{
+    background-color: cadetblue;
+}
+footer{
+    background-color: darkseagreen ;
+    color: darkslategrey;
+}
